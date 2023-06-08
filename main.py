@@ -306,6 +306,7 @@ class Thread(QThread,QMainWindow,Ui_MainWindow):
                 # print(result)
                 data = json.loads(result)
                 # pprint.pprint(data)
+
                 try:
                     phone_number=data['props']['pageProps']['data']['viewData']['phoneNumber'][0]['phoneNumber']
                 except:
